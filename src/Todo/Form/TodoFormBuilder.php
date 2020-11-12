@@ -1,0 +1,69 @@
+<?php namespace Pyro\TodosModule\Todo\Form;
+
+use Anomaly\Streams\Platform\Ui\Form\FormBuilder;
+
+class TodoFormBuilder extends FormBuilder
+{
+
+    /**
+     * The form fields.
+     *
+     * @var array|string
+     *
+     * Fields içini boş bıraktığımızda stream ve fieldste yazdığımız şeyler doğrudan aktarılır ekstra isim belirtmeye gerek kalmaz.
+     */
+    protected $fields = [];
+
+    /**
+     * Additional validation rules.
+     *
+     * @var array|string
+     */
+    protected $rules = [];
+
+    /**
+     * Fields to skip.
+     *
+     * @var array|string
+     *
+     * $skips=['date'] denildiğinde date haricindekileri bize gösterir.
+     */
+    protected $skips = [];
+
+    /**
+     * The form actions.
+     *
+     * @var array|string
+     */
+    //Admin kısmındaki http://oc.test/admin/todos/edit/ kısmı için:
+    protected $actions = [];
+
+    /**
+     * The form buttons.
+     *
+     * @var array|string
+     */
+    protected $buttons = [];
+
+    /**
+     * The form options.
+     *
+     * @var array
+     */
+    protected $options = [];
+
+    /**
+     * The form sections.
+     *
+     * @var array
+     */
+    protected $sections = [];
+
+    /**
+     * The form assets.
+     *
+     * @var array
+     */
+    protected $assets = [];
+
+}
